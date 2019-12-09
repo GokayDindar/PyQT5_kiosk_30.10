@@ -20,9 +20,6 @@ class MainWindow(QWidget):
 
     def initUI(self, btnChecker):
 
-        exitAct = QAction(Icons.stopIcon,"exitActio")
-        exitAct.setShortcut('Ctrl+Q')
-        exitAct.triggered.connect(qApp.quit)
 
         label = QLabel("HELLOWORLD")
         grid = QGridLayout()
@@ -86,7 +83,5 @@ class MainWindow(QWidget):
         palette = QPalette()
         palette.setBrush(10, QBrush(sImage))  # 10 = Windowrole
         self.setPalette(palette)
-
-        """""""""""""""""""""""""""""""EXIT ACTION"""""""""""""""""""""""""""""""
 
         self.show()
