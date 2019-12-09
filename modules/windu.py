@@ -2,7 +2,7 @@
 
 from PyQt5.QtCore import QSize
 
-from PyQt5.QtGui import QIcon, QPixmap, QPalette, QImage, QBrush, QMovie
+from PyQt5.QtGui import QIcon,  QPalette, QImage, QBrush, QMovie
 from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QLabel, QGridLayout, QMainWindow, QToolBar, \
     QToolButton, QAction, qApp
 from functools import partial
