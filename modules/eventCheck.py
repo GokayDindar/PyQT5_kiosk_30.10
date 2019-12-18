@@ -1,14 +1,14 @@
 # it works for which button is in the action and interrupts the last action
 from PyQt5.QtCore import QSize, QThread, pyqtSignal
-from icons import Icons
-from windu import MainWindow
+from modules.icons import Icons
+from modules.windu import MainWindow
 """
 import RPi.GPIO as GPIO
 """
 import time
 from datetime import datetime
 import logging
-from Qthreads import drive_thread
+from modules.Qthreads import drive_thread
 
 
 class WorkerThread(QThread):
@@ -74,7 +74,7 @@ class EventCheck:
             MainWindow.closeButton.setIcon(Icons.closeIcon)
             
             button.setIcon(Icons.stopIcon1)
-            button.setIconSize(QSize(300, 300))
+            button.setIconSize(QSize(100, 100))
             
             """
             
@@ -91,7 +91,7 @@ class EventCheck:
             MainWindow.stopButton.setIcon(Icons.stopIcon)
             
             button.setIcon(Icons.openIcon1)
-            button.setIconSize(QSize(300, 300))
+            button.setIconSize(QSize(100, 100))
             
             """ 
             if self.worker.isRunning():
@@ -106,7 +106,7 @@ class EventCheck:
             MainWindow.stopButton.setIcon(Icons.stopIcon)
 
             button.setIcon(Icons.closeIcon1)
-            button.setIconSize(QSize(300, 300))
+            button.setIconSize(QSize(100, 100))
             
             """
             if self.worker.isRunning():
