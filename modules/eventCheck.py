@@ -74,7 +74,9 @@ class EventCheck:
             MainWindow.closeButton.setIcon(Icons.closeIcon)
             
             button.setIcon(Icons.stopIcon1)
-            button.setIconSize(QSize(100, 100))
+            button.setIconSize(QSize(140
+                                     , 140
+                                     ))
             
             """
             
@@ -91,7 +93,9 @@ class EventCheck:
             MainWindow.stopButton.setIcon(Icons.stopIcon)
             
             button.setIcon(Icons.openIcon1)
-            button.setIconSize(QSize(100, 100))
+            button.setIconSize(QSize(140
+                                     , 140
+                                     ))
             
             """ 
             if self.worker.isRunning():
@@ -106,7 +110,9 @@ class EventCheck:
             MainWindow.stopButton.setIcon(Icons.stopIcon)
 
             button.setIcon(Icons.closeIcon1)
-            button.setIconSize(QSize(100, 100))
+            button.setIconSize(QSize(140
+                                     , 140
+                                     ))
             
             """
             if self.worker.isRunning():
